@@ -20,5 +20,18 @@ namespace Business.Constants
         internal static string BrandAdded;
         internal static string BrandDeleted;
         internal static string BrandUpdated;
+        internal static string RentalListed;
+        internal static string RentalDeleted;
+        internal static string RentalAddedError;
+        internal static string RentalAdded;
+        internal static string RentalUpdated;
+        internal static string CustomerAdded;
+        internal static string CustomerDeleted;
+        internal static string CustomerUpdated;
+        internal static string UserUpdated;
+        internal static string UserDeleted;
+        internal static string UserAdded;
+        internal static string SuccessInserted;
+        internal static string ErrorInserted;
     }
 }

@@ -13,22 +13,58 @@ namespace ConsoleUI
             //CarTest();
             //BrandTest();
             //JoinIslemi();
-            CarManager carManager = new CarManager(new EfCarDal());
-            var result = carManager.GetCarDetails();
-            if (result.Success==true)
-            {
-                foreach (var car in result.Data)
-                {
-                    Console.WriteLine(car.CarName+"/"+car.DailyPrice);
-                }
+            //CarDetailTest();
+            RentalAddedTest();
+            //UserAddedTest();
+            //CustomerAddedTest();
 
-            }
-            else
+
+        }
+
+        //private static void CustomerAddedTest()
+        //{
+        //    CustomerManager customerManager = new CustomerManager(new EfCustomerDal());
+        //    customerManager.Add(new Customer { UserId = 2, CompanyName = "i30" });
+        //    Console.WriteLine(customerManager.GetAll().Messages);
+        //}
+
+        //private static void UserAddedTest()
+        //{
+        //    UserManager userManager = new UserManager(new EfUserDal());
+        //    userManager.Add(new User { FirstName = "Ece Nur", LastName = "DOĞAN", Email = "ecenr502@gmail.com", Password = "123" });
+        //    Console.WriteLine(userManager.GetAll().Success);
+        //}
+
+        private static void RentalAddedTest()
+        {
+            RentalManager rentalManager = new RentalManager(new EfRentalDal());
+            rentalManager.Add(new Rental
             {
-                Console.WriteLine(result.Messages);
-            }
+                CarId = 2,
+                CustomerId = 1,
+                RentDate = DateTime.Now,
+                ReturnDate = new DateTime(2021, 02, 21)
+            });
             
         }
+
+        //private static void CarDetailTest()
+        //{
+        //    CarManager carManager = new CarManager(new EfCarDal());
+        //    var result = carManager.GetCarDetails();
+        //    if (result.Success == true)
+        //    {
+        //        foreach (var car in result.Data)
+        //        {
+        //            Console.WriteLine(car.CarName + "/" + car.DailyPrice);
+        //        }
+
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine(result.Messages);
+        //    }
+        //}
 
         //private static void JoinIslemi()
         //{
@@ -53,7 +89,7 @@ namespace ConsoleUI
         //private static void CarTest()
         //{
         //    CarManager carManager = new CarManager(new EfCarDal());
-          
+
 
         //    Console.WriteLine("Id     Model      Günlük Ücreti     Açıklama");
         //    Console.WriteLine("__________________________________________________");
