@@ -8,8 +8,8 @@ namespace Business.Constants
     {
         public static string CarAdded = "Ürün Eklendi.";
         public static string CarNameInvalid = "Ürün İsmi Geçersiz.";
-        internal static string MaintenanceTime;
-        internal static string CarListed;
+        internal static string MaintenanceTime="Sistem Bakımda";
+        internal static string CarsListed;
         internal static string CarNameInValid;
         internal static string CarDeleted;
         internal static string CarUpdated;
@@ -33,5 +33,6 @@ namespace Business.Constants
         internal static string UserAdded;
         internal static string SuccessInserted;
         internal static string ErrorInserted;
+       
     }
 }
