@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace Business.Constants
@@ -33,6 +34,8 @@ namespace Business.Constants
         internal static string UserAdded;
         internal static string SuccessInserted;
         internal static string ErrorInserted;
-       
+        internal static string FileAdded;
+        internal static string CarImageListed;
+        internal static string CarImageLimitExceeded;
     }
 }
