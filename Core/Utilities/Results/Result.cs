@@ -7,9 +7,9 @@ namespace Core.Utilities.Results
     public class Result : IResult
     {
      
-        public Result(bool success, string messages):this(success)
+        public Result(bool success, string message):this(success)
         {
-            Messages = messages;
+            Message = message;
         }
         public Result(bool success) 
         {
@@ -18,6 +18,6 @@ namespace Core.Utilities.Results
 
         public bool Success { get;  }
 
-        public string Messages { get;  }
+        public string Message { get;  }
     }
 }

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Core.Entities.Concrete;
+using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace Business.Constants
@@ -33,6 +35,13 @@ namespace Business.Constants
         internal static string UserAdded;
         internal static string SuccessInserted;
         internal static string ErrorInserted;
-       
+        public static string AuthorizationDenied = "Yetkiniz yok";
+        public static string AccessTokenCreated = "Access token oluşturuldu";
+        public static string UserAlreadyExists = "Kullanıcı mevcut";
+        public static string SuccessfulLogin = "Giriş başarılı";
+        public static string PasswordError = "Hatalı şifre";
+        public static string UserNotFound = "Kullanıcı bulunamadı";
+        internal static string UserRegistered = "Kullanıcı kayıt edildi";
+        internal static string UserListed = "Kullanıcı listelendi";
     }
 }
