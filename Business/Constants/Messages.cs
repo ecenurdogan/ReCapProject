@@ -43,5 +43,6 @@ namespace Business.Constants
         public static string UserNotFound = "Kullanıcı bulunamadı";
         internal static string UserRegistered = "Kullanıcı kayıt edildi";
         internal static string UserListed = "Kullanıcı listelendi";
+        internal static string CheckIfImageLimit;
     }
 }
